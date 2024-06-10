@@ -8,7 +8,7 @@ body{
     background-color: bisque; 
 }
 
-header{
+.header{
     position: fixed;
     background-color: blanchedalmond;
     top: 0;
@@ -52,7 +52,7 @@ footer{
     color:red;
 }
 /*acondors*/
-a{
+/*a{
     text-decoration: none;
     background-color: green;   
 }
@@ -60,7 +60,7 @@ a{
 a:hover{
     background-color: black;
     color:gray; 
-}
+}*/
 
 table{
     width: 80%;
@@ -80,4 +80,48 @@ tbody tr:nth-child(odd){
 tbody tr:nth-child(even){
     background-color: gray;
     color:black;
+}
+
+.logo{
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 40px;
+    line-height: 90x;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    max-width: 992px;
+    margin: 0 auto;
+    
+}
+
+.nav-link{
+    color: white;
+    text-decoration: none;
+}
+
+.nav-menu{
+          display: flex;
+          margin-right: 40px;
+          list-style: none;
+}
+
+.nav-menu-item{
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 80px;
+    width: max-content
+}
+
+.nav-menu-link{
+    padding: 8px 12px;
+    border-radius: 4px;
+    
+}
+.nav-menu-link:hover{
+    background-color: #024070;
+    transition: 0,5s;
+    
 }
