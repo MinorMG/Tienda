@@ -1,46 +1,57 @@
 <!DOCTYPE html>
-<!-- Autor:Minor Monge G-->
+<!--
+AUTOR:Minor Monge G
+-->
 <html>
     <head>
         <title>TechShop</title>
-        <meta charset="UTF-8">
-        <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
+        <meta charset="UTF-8"><!-- mapa de caracteres -->
+        <!--<link href="css/estilos.css" rel="stylesheet" type="text/css"/>-->
+        <!--<style>
+            p{background: red;font: Verdana;}
+        </style>-->
     </head>
+
     <body>
+
         <header>
+            <h1>Index</h1>
             <nav>
                 <a href="Index.html"><h1>TechShop</h1></a>
                 <a href="Index.html">&triangleleft;</a>
                 <a href="ejemplo2.html">&triangleright;</a>
                 <br> 
             </nav>
-            <hr>
         </header>
+
+        <hr><!--la linea-->
 
         <aside>
             <h2>Top</h2>
             <h3> El producto mas Vendido</h3>
             <p>Segun los datos del mes pasado el producto x100 fue el que se registro mas ventas</p>
         </aside>
-        
+
         <!--  -->
         <section>
             <h2>Nuestros Productos</h2>
-            
+
             <article>
                 <hr/><!-- Servidor gamma alta -->
                 <h2>x2126</h2>
                 <figure>
                     <img src="data:image/jpeg;base64,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" height="150" alt="alt"/>
-                    <figcaption>Servidor de alto perfil <a href="#"></a></figcaption>
+                    <figcaption>Servidor de alto perfil <a href="#">comprar</a></figcaption>
                 </figure>
-                <br>
+                <br><!-- "enter" -->
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 <br>
             </article>
-            
-            
-             <article>
+
+
+
+
+            <article>
                 <hr/><!-- Servidor gamma media -->
                 <h2>x206</h2>
                 <figure>
@@ -51,7 +62,7 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 <br>
             </article>
-            
+
             <article>
                 <hr/><!-- Telefono inteligente  -->
                 <h2>Samsung</h2>
@@ -64,11 +75,9 @@
                 <br>
             </article>
 
-
-
             <article>
                 <table>
-                    
+                    <!-- header -->
                     <thead>
                         <tr>
                             <th>#</th>
@@ -77,7 +86,7 @@
                             <th>Precio</th>
                         </tr>
                     </thead>
-                    
+
                     <tbody>
                         <tr>
                             <td>1</td>
@@ -98,30 +107,13 @@
                             <td>250$</td>
                         </tr>
                     </tbody>
-                    
                 </table>
             </article>
 
-
         </section>
-        <footer></footer>
+
+        <footer>Derechos Reservados &copy;2024</footer>
+
     </body>
 
-    <div>
-        <h1 style="text-align: center">Home</h1>
-            <h2>Pagina Principal</h2>
-            <hr>
-        </div>
-        <div style="text-align: center">
-            <p> Esto es un parrafo de la pagina</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
-            <p>"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."</p>
-            <br>
-            <br>
-            <p>Ultima liena</p>
-        </div>
-    
-    <footer>Derechos Reservados &copy;2024</footer>
-    </body>
 </html>
